@@ -19,8 +19,6 @@ return {
       "cpp",
 
       "markdown",
-      "markdown-inline",
-      -- add more arguments for adding more treesitter parsers
     })
   end,
 }

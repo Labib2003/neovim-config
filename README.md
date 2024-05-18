@@ -10,8 +10,8 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 
 ```shell
 rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim 
-rm -rf ~/.local/state/nvim 
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
 ```
 
@@ -24,7 +24,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone git@github.com:Labib2003/neovim-config.git ~/.config/nvim
 ```
 
 #### Start Neovim
@@ -32,4 +32,5 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
+
 # neovim-config

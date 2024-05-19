@@ -18,6 +18,7 @@ return {
         "emmet_ls",
         "clangd",
         "marksman",
+        "jsonls",
         -- add more arguments for adding more language servers
       })
       opts.automatic_installation = true

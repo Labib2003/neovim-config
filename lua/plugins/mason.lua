@@ -10,16 +10,6 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
-        "tsserver",
-        "tailwindcss",
-        "prismals",
-        "html",
-        "cssls",
-        "emmet_ls",
-        "clangd",
-        "marksman",
-        "jsonls",
-        -- add more arguments for adding more language servers
       })
       opts.automatic_installation = true
     end,
@@ -32,9 +22,6 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "stylua",
-        "eslint-lsp",
-        "clangd-format",
-        "prettierd",
         -- add more arguments for adding more null-ls sources
       })
     end,

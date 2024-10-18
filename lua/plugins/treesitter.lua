@@ -9,18 +9,6 @@ return {
     opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
       "lua",
       "vim",
-
-      "html",
-      "css",
-      "javascript",
-      "typescript",
-      "tsx",
-      "prisma",
-
-      "c",
-      "cpp",
-
-      "markdown",
     })
   end,
 }

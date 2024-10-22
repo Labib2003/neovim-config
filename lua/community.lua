@@ -5,11 +5,17 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
+  -- web dev
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.prisma" },
+
+  -- other languages
+  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.python" },
+
+  -- misc
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
-  -- import/override with your plugins folder
 }

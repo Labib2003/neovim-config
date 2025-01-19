@@ -24,6 +24,11 @@ return {
         "stylua",
         -- add more arguments for adding more null-ls sources
       })
+      -- Auto-restart LSP on `package.json` changes
+      vim.api.nvim_create_autocmd("BufWritePost", {
+        pattern = "package.json",
+        callback = function() vim.cmd "LspRestart" end,
+      })
     end,
   },
   {

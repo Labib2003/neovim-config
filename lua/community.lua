@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.json" },
 
   -- other languages
   { import = "astrocommunity.pack.lua" },

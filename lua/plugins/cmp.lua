@@ -37,5 +37,34 @@ return {
 
     -- make sure Codeium setup happens after cmp setup
     require("codeium").setup {}
+
+    -- Function to toggle Codeium source
+    local function toggle_codeium()
+      -- get list of sources
+      local sources = require("cmp").get_config().sources
+      if not sources then return end
+
+      -- linear search to find index
+      local codeium_source = nil
+      for i, source in ipairs(sources) do
+        if source.name == "codeium" then
+          codeium_source = i
+          break
+        end
+      end
+
+      -- add or remove from list
+      if codeium_source then
+        table.remove(sources, codeium_source)
+      else
+        table.insert(sources, { name = "codeium", priority = 600 })
+      end
+
+      -- restart cmp
+      require("cmp").setup.buffer { sources = sources }
+    end
+
+    -- Create a custom command to toggle Codeium
+    vim.api.nvim_create_user_command("CodeiumToggle", toggle_codeium, {})
   end,
 }

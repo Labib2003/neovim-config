@@ -11,12 +11,13 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "typescript-language-server",
         "eslint-lsp",
+        "vtsls",
         "prisma-language-server",
 
         -- install formatters
         "stylua",
+        "prettier",
 
         -- install any other package
         "tree-sitter-cli",

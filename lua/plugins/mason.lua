@@ -12,8 +12,10 @@ return {
         -- install language servers
         "lua-language-server",
         "eslint-lsp",
+        "css-lsp",
         "vtsls",
         "prisma-language-server",
+        "tailwindcss-language-server",
 
         -- install formatters
         "stylua",
